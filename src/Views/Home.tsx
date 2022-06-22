@@ -1,18 +1,15 @@
 import React from "react";
 import Nav from "../Components/Nav";
-import Content from "../Components/Content";
-import Transaction from "../Components/Transaction";
-import Summary from "../Components/Summary";
-import Sidebar from "../Components/Sidebar";
+import Content from "../Components/Header";
 
 import styled from "styled-components";
 const Container = styled.div`
-  height: 100vh;
+  width: 1440px;
   display: grid;
   grid-template-areas:
-    "nav content content content content sidebar"
-    "nav transaction transaction transaction summary sidebar";
-  gap: 3rem;
+    "nav"
+    "content";
+  gap: 2rem;
 `;
 
 interface HomeProps {}
@@ -22,9 +19,6 @@ const Home: React.FC<HomeProps> = ({}) => {
     <Container>
       <Nav />
       <Content />
-      <Transaction />
-      <Summary />
-      <Sidebar />
     </Container>
   );
 };
