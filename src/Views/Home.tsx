@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "../Components/Nav";
-import Content from "../Components/Header";
+import Header from "../Components/Header";
 
 import styled from "styled-components";
 const Container = styled.div`
@@ -14,11 +14,11 @@ const Container = styled.div`
 
 interface HomeProps {}
 
-const Home: React.FC<HomeProps> = ({}) => {
+const Home: React.FC<HomeProps> = () => {
   return (
     <Container>
       <Nav />
-      <Content />
+      <Header />
     </Container>
   );
 };
