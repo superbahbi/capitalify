@@ -33,12 +33,14 @@ const ServicesText = styled.div`
 const ServicesGroup = styled.div`
   grid-area: group;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 381px;
   display: grid;
 `;
-const ServicesItem = styled.div`
-  width: 255px;
-  height: 381px;
+const ServicesItem = styled.div``;
+const ServicesImage = styled.img`
+  height: 237.6px;
 `;
+
 const ServicesItemText = styled.div`
   font-weight: 600;
   font-size: 32px;
@@ -69,21 +71,21 @@ const Services: React.FC<ServicesProps> = ({}) => {
       <ServicesText>Our serve just for you</ServicesText>
       <ServicesGroup>
         <ServicesItem>
-          <img src={Services1} alt="services1" width="255px" />
+          <ServicesImage src={Services1} alt="services1" />
           <ServicesItemText>Delivery Food</ServicesItemText>
           <ServicesItemSubText>
             Lorem ipsum dolor sit amet, consectetur{" "}
           </ServicesItemSubText>
         </ServicesItem>
         <ServicesItem>
-          <img src={Services2} alt="services2" width="255px" />
+          <ServicesImage src={Services2} alt="services2" />
           <ServicesItemText>Easy to order</ServicesItemText>
           <ServicesItemSubText>
             Lorem ipsum dolor sit amet, consectetur{" "}
           </ServicesItemSubText>
         </ServicesItem>
         <ServicesItem>
-          <img src={Services3} alt="services3" width="255px" />
+          <ServicesImage src={Services3} alt="services3" />
           <ServicesItemText>Fastest delivery</ServicesItemText>
           <ServicesItemSubText>
             Lorem ipsum dolor sit amet, consectetur{" "}

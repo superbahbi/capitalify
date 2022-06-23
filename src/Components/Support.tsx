@@ -7,6 +7,7 @@ const SupportContainer = styled.div`
     "text"
     "image";
   height: 120px;
+  max-width: 1240px;
 `;
 const SupportText = styled.div`
   grid-area: text;
@@ -23,8 +24,7 @@ const SupportImage = styled.div`
   grid-template-columns: repeat(5, 1fr);
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: space-around;
 `;
 interface SupportProps {}
 
