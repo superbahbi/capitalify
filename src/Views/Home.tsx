@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "../Components/Nav";
 import Header from "../Components/Header";
 import Support from "../Components/Support";
-
+import Services from "../Components/Services";
 import styled from "styled-components";
 const Container = styled.div`
   width: 1440px;
@@ -21,6 +21,7 @@ const Home: React.FC<HomeProps> = () => {
       <Nav />
       <Header />
       <Support />
+      <Services />
     </Container>
   );
 };
