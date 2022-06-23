@@ -1,6 +1,7 @@
 import React from "react";
 import ShoppingBag from "../Assets/shopping-bag.svg";
 import styled from "styled-components";
+import Button from "./Button";
 const NavContainer = styled.nav`
   grid-area: nav;
   display: grid;
@@ -63,31 +64,7 @@ const NavCart = styled.div`
     vertical-align: middle;
   }
 `;
-const NavRegister = styled.button`
-  grid-area: register;
-  border: 1px solid #ec994b;
-  background-color: white;
-  color: #ec994b;
-  border-radius: 41px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  cursor: pointer;
-`;
-const NavLogin = styled.button`
-  grid-area: login;
-  font-style: normal;
-  border: 1px solid #ec994b;
-  background-color: #ec994b;
-  color: white;
-  border-radius: 41px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  cursor: pointer;
-`;
+
 interface NavProps {}
 
 const Nav: React.FC<NavProps> = () => {
@@ -102,10 +79,10 @@ const Nav: React.FC<NavProps> = () => {
       </NavList>
       <NavCart>
         <span className="helper"></span>
-        <img src={ShoppingBag} />
+        <img src={ShoppingBag} alt="bag" />
       </NavCart>
-      <NavRegister>Register</NavRegister>
-      <NavLogin>Login</NavLogin>
+      <Button secondary name="Register" area="register" size="lg" />
+      <Button primary name="Login" area="login" size="lg" />
     </NavContainer>
   );
 };
