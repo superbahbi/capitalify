@@ -3,6 +3,11 @@ import Nav from "../Components/Nav";
 import Header from "../Components/Header";
 import Support from "../Components/Support";
 import Services from "../Components/Services";
+import Trending from "../Components/Trending";
+import Comment from "../Components/Comment";
+import Review from "../Components/Review";
+import Newsletter from "../Components/Newsletter";
+import Footer from "../Components/Footer";
 import styled from "styled-components";
 const Container = styled.div`
   width: 1440px;
@@ -10,7 +15,6 @@ const Container = styled.div`
   grid-template-areas:
     "nav"
     "content";
-  gap: 2rem;
 `;
 
 interface HomeProps {}
@@ -22,6 +26,11 @@ const Home: React.FC<HomeProps> = () => {
       <Header />
       <Support />
       <Services />
+      <Trending />
+      <Comment />
+      <Review />
+      <Newsletter />
+      <Footer />
     </Container>
   );
 };
