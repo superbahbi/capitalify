@@ -23,7 +23,6 @@ const ServicesSubText = styled.div`
 `;
 const ServicesText = styled.div`
   grid-area: text;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
@@ -74,21 +73,21 @@ const Services: React.FC<ServicesProps> = ({}) => {
           <ServicesImage src={Services1} alt="services1" />
           <ServicesItemText>Delivery Food</ServicesItemText>
           <ServicesItemSubText>
-            Lorem ipsum dolor sit amet, consectetur{" "}
+            Lorem ipsum dolor sit amet, consectetur
           </ServicesItemSubText>
         </ServicesItem>
         <ServicesItem>
           <ServicesImage src={Services2} alt="services2" />
           <ServicesItemText>Easy to order</ServicesItemText>
           <ServicesItemSubText>
-            Lorem ipsum dolor sit amet, consectetur{" "}
+            Lorem ipsum dolor sit amet, consectetur
           </ServicesItemSubText>
         </ServicesItem>
         <ServicesItem>
           <ServicesImage src={Services3} alt="services3" />
           <ServicesItemText>Fastest delivery</ServicesItemText>
           <ServicesItemSubText>
-            Lorem ipsum dolor sit amet, consectetur{" "}
+            Lorem ipsum dolor sit amet, consectetur
           </ServicesItemSubText>
         </ServicesItem>
       </ServicesGroup>
